@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
  
 const Produtos = () => {
     const [pizzas,setPizzas] = useState(['Calabreza','Muçarela','baiana']);
-   axios.get("http://172.19.0.49/pizzariaoficial/api/v1/produto")
+   axios.get("http://172.19.0.49/pizzariateste/api/v1/produto")
    .then(response => setPizzas(response.data.data))
    .catch(error => console.long(error))
 
